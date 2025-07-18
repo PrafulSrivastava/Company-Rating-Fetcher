@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - CHROMEDRIVER_PATH=/usr/local/bin/chromedriver
+    volumes:
+      - .:/app
